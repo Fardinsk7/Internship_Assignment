@@ -13,6 +13,14 @@ app.use(express.json());
 app.use(cors());
 app.disable('x-powered-by')//A Security Practice, avoid hackers
 
+//API routes Initialized
+app.use('/movie',require("./router/moviesRoutes"));
+
+//Home route
+app.get("/",(req,res)=>{
+    res.send("Hello World")
+})
+
 //Initializing Database Connection if connected to Database then started Server 
 connectToMongodb().then(()=>{
     try {
