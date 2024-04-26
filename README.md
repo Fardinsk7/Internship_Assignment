@@ -14,7 +14,7 @@ This project is a simple REST API server built using Node.js and MongoDB. It all
 # Clone the repository: 
 git clone [https://github.com/Fardinsk7/Internship_Assignment.git]
 
-#Install dependencies: npm install
+# Install dependencies: npm install
 Create a .env file and add your MongoDB connection URL in the format MONGO_URL=<your_mongo_url>
 Start the server: npm start
 
